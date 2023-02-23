@@ -1,4 +1,21 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
 %}
 <h1>Home Page Stuff</h1>
+
+<form method="POST">
+	<h3 align="center">Bruh</h3>
+	<div class="form-group">
+		<label for="username">Spotify Username</label>
+		<input
+			type="text"
+			class="form-control"
+			id="username"
+			name="username"
+			placeholder="Enter Spotify username..."
+		/>
+	</div>
+	<br />
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
 {% endblock %}
