@@ -1,9 +1,9 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
 %}
-<h1>Home Page Stuff</h1>
+<h1>Cool Home Page Stuff</h1>
 
 <form method="POST">
-	<h3 align="center">Bruh</h3>
+	<h3 align="center">First, we need to steal your Spotify account</h3>
 	<div class="form-group">
 		<label for="username">Spotify Username</label>
 		<input
@@ -17,5 +17,9 @@
 	<br />
 	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<h2>Spotify username: {{spotifyUsername}}</h2>
+<h3>Top Artists: {{topArtists}}</h3>
+<h3>Top Tracks: {{topTracks}}</h3>
 
 {% endblock %}
