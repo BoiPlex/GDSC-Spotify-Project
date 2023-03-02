@@ -12,7 +12,6 @@ REDIRECT_URI = "http://localhost:8888/callback"
 
 def getData(spotifyUsername):
     USERNAME = spotifyUsername
-    # input("Input spotify username: ")
 
     #getting data
     SCOPE = 'user-top-read'
@@ -31,3 +30,5 @@ def getData(spotifyUsername):
         topTracks[item['name']] = item['artists'][0]['name']
 
     return topArtists, topTracks
+
+print(getData("Karim"))

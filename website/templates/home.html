@@ -18,8 +18,18 @@
 	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-<h2>Spotify username: {{spotifyUsername}}</h2>
-<h3>Top Artists: {{topArtists}}</h3>
-<h3>Top Tracks: {{topTracks}}</h3>
+<h3>{{ spotifyUsername }}'s Top Artists:</h3>
+<ol>
+	{% for item in topArtists %}
+	<li>{{ item }}</li>
+	{% endfor %}
+</ol>
+
+<h3>{{ spotifyUsername }}'s Top Tracks:</h3>
+<ol>
+	{% for item in topTracks %}
+	<li>{{ item }}</li>
+	{% endfor %}
+</ol>
 
 {% endblock %}
